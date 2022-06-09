@@ -1,0 +1,61 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Form validation example</title>
+  <style>
+    input{display:block; margin-bottom:10px;}
+  </style>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="menu.css" rel="stylesheet">
+</head>
+
+<body>
+ <header>
+            <!--Navigation Starts Here-->
+            <nav>
+                <div id="menu-wrapper">
+                    <a href="menu.html" id = "logo"><h1>LiveLife Clinic</h1></a>
+                    <p id = "menu">=\/=</p>
+                    <section id="navBar">
+                        <a href="Checkup.html">Check Up</a>
+                        <a href="Equipments.html">Equipments</a>
+                        <a href="Medicines.html">Medicines</a>
+                        <a href="Patients.html">Patients</a>
+			<a href="Treatments.html">Treatments</a>
+                    </section>
+                </div>
+            </nav>
+		<br><br>
+            <!--Navigation Ends Here-->
+        </header>
+<br><br><br>
+  <h1>EQUIPMENTS</h1>
+   <center><form action="Equipments.php" method="post">
+<table border="5" cellspacing="10" cellpadding="15"><tr>
+
+	<td><label for="equipment_id">Equipment ID:</label>
+    	<input name="equipment_id" type="text" /></td>
+    
+    	<td><label for="equipment_name">Equipment Name:</label>
+    	<input name="equipment_name" type="text" /></td>
+
+	<td><label for="requested_date">Previous Serviced Date:</label>
+    	<input name="requested_date" type="date" /></td>
+
+	<td><label for="defected_date">Next Service Due Date:</label>
+    	<input name="defected_date" type="date" /></td>
+
+</table>
+<br><br>
+<table cellspacing="10">
+<tr>
+	<th><input type="submit" value="Insert" />	</th>
+</tr></table>
+  </form></center>
+  <form action = "equipments_display.php" method = "post">
+    <input type="int" />
+    <input type = "submit" name = "equipment_id"/>
+    </form>
+</body>
+</html>

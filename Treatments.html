@@ -1,0 +1,57 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Treatments</title>
+  <style>
+    input{display:block; margin-bottom:10px;}
+  </style>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="menu.css" rel="stylesheet">
+</head>
+
+<body>
+ <header>
+            <!--Navigation Starts Here-->
+            <nav>
+                <div id="menu-wrapper">
+                    <a href="menu.html" id = "logo"><h1>LiveLife Clinic</h1></a>
+                    <p id = "menu">=\/=</p>
+                    <section id="navBar">
+                        <a href="Checkup.html">Check Up</a>
+                        <a href="Equipments.html">Equipments</a>
+                        <a href="Medicines.html">Medicines</a>
+                        <a href="Patients.html">Patients</a>
+			<a href="Treatments.html">Treatments</a>
+                    </section>
+                </div>
+            </nav>
+		<br><br>
+            <!--Navigation Ends Here-->
+        </header>
+<br><br><br>
+  <h1>TREATMENTS</h1>
+    <center><form action="Treatments.php" method="post">
+<table border="5" cellspacing="10" cellpadding="15"><tr>
+
+	<td><label for="treat_id">Treatment ID:</label>
+    	<input name="treat_id" type="text" /></td>
+    
+    	<td><label for="treat_type">Treatment Name:</label>
+    	<input name="treat_type" type="text" /></td>
+
+
+</table>
+<br><br>
+<table cellspacing="10">
+<tr>
+
+	<th><input type="submit" value="Insert" />	</th>
+</tr></table>
+  </form></center>
+
+  <form action="Treatments_display.php">
+    <input type="submit" value="Display" />	</th>
+  </form>
+</body>
+</html>

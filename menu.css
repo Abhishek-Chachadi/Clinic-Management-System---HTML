@@ -1,0 +1,91 @@
+/*===================== Navigation Bar =====================*/
+nav
+{
+    background-color: #2C3E50; /* Menu BG Color */
+    position:fixed;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    z-index:1;
+}
+#menu-wrapper
+{
+    width: 90%;
+    margin: auto;
+}
+#menu
+{
+    display: none;
+}
+#logo
+{
+    margin: 0px;
+    display: inline-block;
+}
+#logo h1
+{
+    color: white;
+    padding: 10px 0px;
+    margin: 0px; 
+    font-size: 30px;
+}
+#navBar
+{
+    display: inline-block;
+    position: fixed;
+    right: 5%;
+    margin-top: 10px;
+    padding: 8px;
+}
+#navBar a
+{
+    text-decoration: none;
+    color: white; 
+    padding: 10px;
+}
+
+/* Smaller Screen Size */
+@media (max-width: 900px) /* For Tablts */
+{
+    #logo h1
+    {
+        color: white;
+        padding: 10px 0px;
+        margin: 0px;
+        font-size: 20px;
+    }
+    #logo
+    {
+        margin: 0px;
+        display: inline-block;
+    }
+    #navBar
+    {
+        margin-top: 5px;
+    }
+}
+
+@media (max-width: 760px) /* For Mobile Phones */
+{
+    #navBar
+    {
+        display: none;
+    }
+    #menu
+    {
+        display: inline-block;
+        position: fixed;
+        color: white;
+        right: 5%;
+        margin: 0px;
+        padding: 8px;
+    }   
+    #navBar a
+    {
+        display: block;
+        background-color: #2C3E50;
+    }
+}
+/* Smaellr Screen size ends */
+
+/*=================================================*/

@@ -1,0 +1,91 @@
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <script type="text/javascript">
+    function check_for_blank()
+    {
+    var temp=0;
+    element=document.getElementsByClassName("imp");
+    for(var i=0;i<element.length;i++)
+    {
+        if(element[i].value=="")
+        {
+            temp=1;
+            break;
+        }
+    }
+    if(temp==1)
+    {
+        alert("Please Enter The Empty Fields");
+        return false;
+    }
+    else
+    return true;
+    }
+</script>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <title>Form validation example</title>
+  <style>
+    input{display:block; margin-bottom:10px;}
+  </style>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="menu.css" rel="stylesheet">
+</head>
+
+<body>
+ <header>
+            <!--Navigation Starts Here-->
+            <nav>
+                <div id="menu-wrapper">
+                    <a href="menu.html" id = "logo"><h1>LiveLife Clinic</h1></a>
+                    <p id = "menu">=\/=</p>
+                    <section id="navBar">
+                        <a href="Checkup.html">Check Up</a>
+                        <a href="Equipments.html">Equipments</a>
+                        <a href="Medicines.html">Medicines</a>
+                        <a href="Patients.html">Patients</a>
+			<a href="Treatments.html">Treatments</a>
+                    </section>
+                </div>
+            </nav>
+		<br><br>
+            <!--Navigation Ends Here-->
+        </header>
+<br><br><br>
+  <h1>MEDICINES</h1>
+
+  <center><form action="Medicines.php" method="post" onsubmit="return check_for_blank()">
+<table border="5" cellspacing="10" cellpadding="15"><tr>
+
+	<td><label for="med_id">Medicine ID:</label>
+    	<input name="med_id" class = "imp" type="text" /></td>
+    
+    	<td><label for="med_name">Medicine Name:</label>
+    	<input name="med_name" class = "imp" type="text" /></td>
+
+	<td><label for="available_qty">Available Quantity:</label>
+    	<input name="available_qty"class = "imp" type="text" /></td>
+</tr><tr>
+
+	<td><label for="description">Description:</label>
+    	<input name="description" type="text" /></td>
+
+	<td><label for="expiry_date">Expiry Date:</label>
+    	<input name="expiry_date" class = "imp" type="date" /></td>
+
+	<td><label for="requested_date">Stocked Date:</label>
+    	<input name="requested_date" type="date" /></td>
+</table>
+<br><br>
+<table cellspacing="10">
+<tr>
+	<th><input type="submit" value="Insert" />	</th>
+</tr></table>
+</form></center>
+
+  <form action = "medicines_display.php" method = "post">
+
+    <input type = "submit" value = "Display"/>
+    </form>
+</body>
+</html>
